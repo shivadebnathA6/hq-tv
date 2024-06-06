@@ -9,5 +9,5 @@ function getIdenByurl($url){
     $sql="SELECT * FROM `contents` WHERE `url`='$url'";
     $query=$mysqli->query($sql);
     $fetch=$query->fetch_array();
-    return $fetch['Identifier'];
+    return $fetch;
 }
